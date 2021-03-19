@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Documentation</h1>
+
+<table>
+    <tr>
+    <th>Description</th>
+    <th>URL Endpoint</th>
+    <th>HTTP Method</th>
+    <th>Request Body Format</th>
+    <th>Response Body Format</th>
+</tr>
+
+    <td> Return a list of ALL movies to the user  </td>
+        <td>/movies</td>
+        <td>GET</td>
+        <td>None</td>
+        <td>JSON object that contains data for movies</td>
+</tr>
+<tr>
+
+    <td>Return data about a single movie by title to the user </td>
+        <td>/movies/:title</td>
+        <td>GET</td>
+        <td>None</td>
+        <td>JSON object that contains data for movies by title</td>
+</tr>
+<tr>
+    <td>Return data about a genre by name/title</td>
+    <td>/movies/genres/:Title</td>
+    <td>GET</td>
+    <td>None</td>
+    <td>JSON object with data about a genre by name/title</td>
+</tr>
+<tr>
+    <td>Return data about a director (bio, birth year, death year) by name</td>
+    <td>/movies/directors/:Name</td>
+    <td>GET</td>
+    <td>None</td>
+    <td>JSON object with data about a director (bio, birth year, death year) by name</td>
+</tr>
+<tr>
+    <td>This allows new users to register</td>
+    <td>/users</td>
+    <td>POST</td>
+    <td>JSON object with data of a new user containing username, password and email</td>
+    <td>JSON object with data about user that was addded</td>
+</tr>
+<tr>
+    
+    <td>This allows users to update their info/username</td>
+    <td>/users/:Username</td>
+    <td>PUT</td>
+    <td>None</td>
+    <td>JSON object with updated info</td>
+    
+  </tr>
+  <tr>
+    <td>This allows users to add a movie to their favorites list</td>
+    <td>/users/:Username/movies/:Title</td>
+    <td>POST</td>
+    <td>None</td>
+    <td>Text notifying that the movie has been added to favorites list</td>
+  </tr>
+
+  <tr>
+    <td>This allows users to remove movies from favorites</td>
+    <td>/users/:Username/movies/:Title</td>
+    <td>DELETE</td>
+    <td>None</td>
+    <td>A text notifying that  movie has been removed</td>
+  </tr>
+
+  <tr>
+        <td>This allows users to deactivate their account</td>
+        <td>/users/:Username</td>
+        <td>DELETE</td>
+        <td>None</td>
+        <td>A text notifying the user email/account has been removed and deactivated</td>
+ </tr>
+
+
+</table>
+
+</body>
+</html>
