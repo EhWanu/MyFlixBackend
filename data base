@@ -252,3 +252,23 @@ db.users.insertOne(user5)
 
 
   db.movies.remove({ "Username": "jimmy" })
+
+
+
+
+
+  mongoimport --uri myflixdb-shard-00-02.vr8nt.mongodb.net:27017://Wanu:schneef@myflixdb.vr8nt.mongodb.net/myFlixDB --collection movies --type json --file movies.json
+
+  mongoimport --uri myflixdb-shard-00-02.vr8nt.mongodb.net:27017://Wanu:schneef@myflixdb-shard-00-02.vr8nt.mongodb.net/myFlixDb --collection movies --type json --file movies.json
+
+mongoimport --uri mongodb+srv://Wanu:schneef@myflixdb-shard-00-02.vr8nt.mongodb.net/myFlixDb --collection movies --type json --file movies.json
+
+
+mongoimport --host myflixdb-shard-00-02.vr8nt.mongodb.net:27017 --db movies --type json --file C:\Users\CamSh\Documents\MyFlixBackend\movies.json --authenticationDatabase admin --ssl --username Wanu --password schneef
+
+  mongoexport -d movies -c users -o users.json
+
+
+  mongoimport --host myflixdb-shard-00-02.vr8nt.mongodb.net:27017,myflixdb-shard-00-00.vr8nt.mongodb.net:27017,myflixdb-shard-00-02.vr8nt.mongodb.net:27017 --ssl --username Wanu --password schneef --authenticationDatabase admin --db myFlixDB --collection users --type json --file C:\Users\CamSh\Documents\MyFlixBackend\users.json
+
+  mongodb+srv://Wanu:schneef@myflixdb.vr8nt.mongodb.net/myFlixDb?retryWrites=true&w=majority

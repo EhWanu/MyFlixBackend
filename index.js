@@ -1,6 +1,6 @@
 const { check, validationResult } = require('express-validator');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/movies', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('process.env.CONNECTION_URI', { useNewUrlParser: true, useUnifiedTopology: true });
 const Models = require('./models.js');
 const bodyParser = require('body-parser');
 const Movies = Models.Movie;
