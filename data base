@@ -1,0 +1,254 @@
+{
+  Title: "Memento",
+  Description: "A man with short-term memory loss attempts to track down his wife's murderer.",
+  Genre: {
+    Name: "Thriller",
+    Description: "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience."
+  },
+  Director: {
+    Name: "Christtopher Nolan",
+    Bio: "Best known for his cerebral, often nonlinear, storytelling, acclaimed writer-director Christopher Nolan was born on July 30, 1970, in London, England.",
+    Birth: "1970"
+  },
+  ImagePath: "https://m.media-amazon.com/images/M/MV5BZTcyNjk1MjgtOWI3Mi00YzQwLWI5MTktMzY4ZmI2NDAyNzYzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY268_CR0,0,182,268_AL_.jpg",
+  Featured: false
+}
+
+var movie1 = {
+  Title: "Memento",
+  Description: "A man with short-term memory loss attempts to track down his wife's murderer.",
+  Genre: {
+    Name: "Thriller",
+    Description: "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience."
+  },
+  Director: {
+    Name: "Christtopher Nolan",
+    Bio: "Best known for his cerebral, often nonlinear, storytelling, acclaimed writer-director Christopher Nolan was born on July 30, 1970, in London, England.",
+    Birth: "1970",
+  },
+  ImagePath: "silenceofthelambs.png",
+  Featured: false
+}
+
+db.movies.insertOne(movie1)
+
+
+var movie1 = {
+  Title: "Inception",
+  Description: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+  Genre: {
+    Name: "Action",
+    Description: "Action film is a film genre in which the protagonist or protagonists are thrust into a series of events that typically include violence, extended fighting, physical feats, rescues and frantic chases. Action films tend to feature a mostly resourceful hero struggling against incredible odds, which include life-threatening situations, a dangerous villain, or a pursuit which usually concludes in victory for the hero (though a small number of films in this genre have ended in the victory for the villain instead)"
+  },
+  Director: {
+    Name: "Christtopher Nolan",
+    Bio: "Best known for his cerebral, often nonlinear, storytelling, acclaimed writer-director Christopher Nolan was born on July 30, 1970, in London, England.",
+    Birth: "1970",
+  },
+  ImagePath: "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  Featured: false
+}
+
+db.movies.insertOne(movie1)
+
+
+var movie1 = {
+  Title: "The Prestige",
+  Description: "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
+  Genre: {
+    Name: "Drama",
+    Description: "In film and television, drama is a category of narrative fiction (or semi-fiction) intended to be more serious than humorous in tone.[1] Drama of this kind is usually qualified with additional terms that specify its particular super-genre, macro-genre, or micro-genre,[2] such as soap opera (operatic drama), police crime drama, political drama, legal drama, historical drama, domestic drama, teen drama, and comedy-drama (dramedy)."
+  },
+  Director: {
+    Name: "Christtopher Nolan",
+    Bio: "Best known for his cerebral, often nonlinear, storytelling, acclaimed writer-director Christopher Nolan was born on July 30, 1970, in London, England.",
+    Birth: "1970",
+  },
+  ImagePath: "https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_UX182_CR0,0,182,268_AL_.jpg",
+  Featured: false
+}
+
+db.movies.insertOne(movie1)
+
+
+
+var movie1 = {
+  Title: "Star Wars: Episode IV - A New Hope",
+  Description: "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.",
+  Genre: {
+    Name: "Sci-fi",
+    Description: "Science fiction (or sci-fi) is a film genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science, such as extraterrestrial lifeforms, alien worlds, extrasensory perception and time travel, along with futuristic elements such as spacecraft, robots, cyborgs, interstellar travel or other technologies."
+  },
+  Director: {
+    Name: "George Lucas",
+    Bio: "George Walton Lucas, Jr. was raised on a walnut ranch in Modesto, California. His father was a stationery store owner and he had three siblings.",
+    Birth: "1944",
+  },
+  ImagePath: "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  Featured: true
+}
+
+db.movies.insertOne(movie1)
+
+
+
+var movie1 = {
+  Title: "Star Wars: Episode V - The Empire Strikes Back",
+  Description: "After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader and a bounty hunter named Boba Fett all over the galaxy.",
+  Genre: {
+    Name: "Sci-fi",
+    Description: "Science fiction (or sci-fi) is a film genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science, such as extraterrestrial lifeforms, alien worlds, extrasensory perception and time travel, along with futuristic elements such as spacecraft, robots, cyborgs, interstellar travel or other technologies."
+  },
+  Director: {
+    Name: "George Lucas",
+    Bio: "George Walton Lucas, Jr. was raised on a walnut ranch in Modesto, California. His father was a stationery store owner and he had three siblings.",
+    Birth: "1944",
+  },
+  ImagePath: "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  Featured: true
+}
+
+db.movies.insertOne(movie1)
+
+
+
+var movie1 = {
+  Title: "Star Wars: Episode VI - Return of the Jedi",
+  Description: "After a daring mission to rescue Han Solo from Jabba the Hutt, the Rebels dispatch to Endor to destroy the second Death Star. Meanwhile, Luke struggles to help Darth Vader back from the dark side without falling into the Emperor's trap.",
+  Genre: {
+    Name: "Sci-fi",
+    Description: "Science fiction (or sci-fi) is a film genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science, such as extraterrestrial lifeforms, alien worlds, extrasensory perception and time travel, along with futuristic elements such as spacecraft, robots, cyborgs, interstellar travel or other technologies."
+  },
+  Director: {
+    Name: "George Lucas",
+    Bio: "George Walton Lucas, Jr. was raised on a walnut ranch in Modesto, California. His father was a stationery store owner and he had three siblings.",
+    Birth: "1944",
+  },
+  ImagePath: "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  Featured: true
+}
+
+db.movies.insertOne(movie1)
+
+
+
+
+
+var movie1 = {
+  Title: "The Lord of the Rings: The Fellowship of the Ring",
+  Description: "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+  Genre: {
+    Name: "Adventure",
+    Description: "Adventure films are a genre of film whose plots feature elements of travel. They typically involve protagonists who must leave their home or place of comfort and go to far away lands to fulfill a goal. Settings play an important role in adventure films, sometimes as big as the characters themselves."
+  },
+  Director: {
+    Name: "Peter Jackson",
+    Bio: "Peter Jackson was born as an only child in a small coast-side town in New Zealand in 1961. When a friend of his parents bought him a super 8 movie camera (because she saw how much he enjoyed taking photos), the then eight-year-old Peter instantly grabbed the thing to start recording his own movies, which he made with his friends.",
+    Birth: "1961",
+  },
+  ImagePath: "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  Featured: false
+}
+
+db.movies.insertOne(movie1)
+
+var movie1 = {
+  Title: "The Lord of the Rings: The Two Towers",
+  Description: "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard..",
+  Genre: {
+    Name: "Adventure",
+    Description: "Adventure films are a genre of film whose plots feature elements of travel. They typically involve protagonists who must leave their home or place of comfort and go to far away lands to fulfill a goal. Settings play an important role in adventure films, sometimes as big as the characters themselves."
+  },
+  Director: {
+    Name: "Peter Jackson",
+    Bio: "Peter Jackson was born as an only child in a small coast-side town in New Zealand in 1961. When a friend of his parents bought him a super 8 movie camera (because she saw how much he enjoyed taking photos), the then eight-year-old Peter instantly grabbed the thing to start recording his own movies, which he made with his friends.",
+    Birth: "1961",
+  },
+  ImagePath: "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  Featured: false
+}
+
+db.movies.insertOne(movie1)
+
+var movie1 = {
+  Title: "The Lord of the Rings: The Return of the King",
+  Description: "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+  Genre: {
+    Name: "Adventure",
+    Description: "Adventure films are a genre of film whose plots feature elements of travel. They typically involve protagonists who must leave their home or place of comfort and go to far away lands to fulfill a goal. Settings play an important role in adventure films, sometimes as big as the characters themselves."
+  },
+  Director: {
+    Name: "Peter Jackson",
+    Bio: "Peter Jackson was born as an only child in a small coast-side town in New Zealand in 1961. When a friend of his parents bought him a super 8 movie camera (because she saw how much he enjoyed taking photos), the then eight-year-old Peter instantly grabbed the thing to start recording his own movies, which he made with his friends.",
+    Birth: "1961",
+  },
+  ImagePath: "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  Featured: false
+}
+
+db.movies.insertOne(movie1)
+
+
+db.movies.update(
+  { _id: ObjectId("60588d8565a8805aac0a5d8a") },
+  { $set: {  ImagePath: "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" } }
+)
+
+
+USERS
+
+var user1 =
+{
+  Username: "Wanu",
+  Password: "test123",
+  Email: "wanu@gmail.com",
+  Birthday: "12/01/1991",
+  FavoriteMovies: [  ]
+}
+db.users.insertOne(user1)
+
+var user2 =
+{
+  Username: "Nyius",
+  Password: "test123",
+  Email: "Nyius@gmail.com",
+  Birthday: "12/10/1991",
+  FavoriteMovies: [  ]
+}
+db.users.insertOne(user2)
+
+var user3 =
+{
+  Username: "Jester",
+  Password: "test123",
+  Email: "Jester@gmail.com",
+  Birthday: "11/21/1991",
+  FavoriteMovies: [  ]
+}
+db.users.insertOne(user3)
+
+var user4 =
+{
+  Username: "Schneef",
+  Password: "test123",
+  Email: "Schneef@gmail.com",
+  Birthday: "05/07/1991",
+  FavoriteMovies: [  ]
+}
+db.users.insertOne(user4)
+
+var user5 =
+{
+  Username: "jimmy",
+  Password: "test123",
+  Email: "jimmy@gmail.com",
+  Birthday: "08/23/1991",
+  FavoriteMovies: [  ]
+}
+db.users.insertOne(user5)
+
+
+
+
+
+  db.movies.remove({ "Username": "jimmy" })
