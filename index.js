@@ -1,6 +1,6 @@
 const { check, validationResult } = require('express-validator');
 const mongoose = require('mongoose');
-mongoose.connect('process.env.CONNECTION_URI', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.CONNECTION_URI , { useNewUrlParser: true, useUnifiedTopology: true });
 const Models = require('./models.js');
 const bodyParser = require('body-parser');
 const Movies = Models.Movie;
@@ -48,7 +48,7 @@ app.get('/documentation', (req, res) => {
   res.sendFile('public/documentation.html', { root: __dirname });
 });
 
-app.get('/movies', passport.authenticate('jwt', { session: false }), (req, res) => {
+app.get('/movies', (req, res) => {
   Movies.find()
     .then((movies) => {
       res.status(201).json(movies);
