@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 morgan = require('morgan');
 app.use(morgan('common'));
 
-/*let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'];
+let allowedOrigins = ['http://localhost:8080', 'http://testsite.com','http://localhost:1234'];
 
 app.use(cors({
   origin: (origin, callback) => {
@@ -24,7 +24,7 @@ app.use(cors({
     return callback(null, true);
   }
 }));
-*/
+
 app.use(cors());
 // Logger
 let myLogger = (req, res, next) => {
