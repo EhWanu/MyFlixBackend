@@ -1,4 +1,5 @@
 {
+  _id: ObjectId("60554ec165a8805aac0a5d82"),
   Title: "Memento",
   Description: "A man with short-term memory loss attempts to track down his wife's murderer.",
   Genre: {
@@ -153,6 +154,7 @@ var movie1 = {
 db.movies.insertOne(movie1)
 
 var movie1 = {
+  _id: ObjectId("60588d5e65a8805aac0a5d89"),
   Title: "The Lord of the Rings: The Two Towers",
   Description: "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard..",
   Genre: {
@@ -164,7 +166,7 @@ var movie1 = {
     Bio: "Peter Jackson was born as an only child in a small coast-side town in New Zealand in 1961. When a friend of his parents bought him a super 8 movie camera (because she saw how much he enjoyed taking photos), the then eight-year-old Peter instantly grabbed the thing to start recording his own movies, which he made with his friends.",
     Birth: "1961",
   },
-  ImagePath: "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  ImagePath: "https://www.imdb.com/title/tt0167261/mediaviewer/rm306845440/?ref_=tt_ov_i",
   Featured: false
 }
 
@@ -272,3 +274,28 @@ mongoimport --host myflixdb-shard-00-02.vr8nt.mongodb.net:27017 --db movies --ty
   mongoimport --host myflixdb-shard-00-02.vr8nt.mongodb.net:27017,myflixdb-shard-00-00.vr8nt.mongodb.net:27017,myflixdb-shard-00-02.vr8nt.mongodb.net:27017 --ssl --username Wanu --password schneef --authenticationDatabase admin --db myFlixDB --collection users --type json --file C:\Users\CamSh\Documents\MyFlixBackend\users.json
 
   mongodb+srv://Wanu:schneef@myflixdb.vr8nt.mongodb.net/myFlixDb?retryWrites=true&w=majority
+
+
+
+  mongosh "mongodb+srv://myflixdb.vr8nt.mongodb.net/myFirstDatabase" --username Wanu
+
+db.movies.find()
+
+  DELETES 
+
+  _id: ObjectId("60554e6f65a8805aac0a5d81"),
+
+  _id: ObjectId("60554e5365a8805aac0a5d80"),
+
+
+db.movies.deleteOne({_id: ObjectId("60554e5365a8805aac0a5d80")})
+
+
+
+
+
+
+  db.movies.updateOne(
+  { _id: ObjectId("6055511265a8805aac0a5d85") },
+  { $set: { ImagePath: "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/af78667e1088f3c29e09cb5b554b33c9d3cc1278491e2f8ddf62df9e95a85c8e._UR1920,1080_RI_UX400_UY225_.jpg" } }
+)
