@@ -7,3 +7,12 @@ If you are interested in viewing the front-end logic, you can visit the [front-e
 
 If you are interested in making a free account and experiencing the final product for yourself, you can visit the [myFlix]() app.
 
+
+### Technologies
+
+- MongoDB
+- Express.js
+- Node.js
+- Mongoose
+- Heroku
+- NPM
